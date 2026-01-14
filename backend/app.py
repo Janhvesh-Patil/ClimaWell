@@ -11,7 +11,12 @@ app = Flask(__name__)
 # CORS Configuration - Will add deployed frontend URL later
 CORS(app, resources={
     r"/*": {
-        "origins": "*",  # We'll restrict this after deployment
+        "origins": [
+            "http://localhost:5173",
+            "http://localhost:3000",
+            "https://heat-aware-dashboard.vercel.app",
+            "https://*.vercel.app"
+        ],
         "methods": ["GET", "POST", "OPTIONS"],
         "allow_headers": ["Content-Type"],
         "supports_credentials": False
