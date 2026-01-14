@@ -12,6 +12,7 @@ app = Flask(__name__)
 CORS(app, resources={
     r"/*": {
         "origins": [
+            "http://localhost:8080",
             "http://localhost:5173",
             "http://localhost:3000",
             "https://heat-aware-dashboard.vercel.app",
