@@ -1,0 +1,29 @@
+{
+  "features": [
+    "temperature_2m_max",
+    "temperature_2m_min",
+    "wind_speed_10m_max",
+    "wind_gusts_10m_max",
+    "precipitation_sum"
+  ],
+  "risk_labels": {
+    "0": "Low",
+    "1": "Medium",
+    "2": "High"
+  },
+  "model_type": "RandomForestClassifier",
+  "training_date": "2025-11-01 09:57:41",
+  "accuracy": 0.8828843626806833,
+  "train_accuracy": 0.8932736530880421,
+  "test_accuracy": 0.8828843626806833,
+  "high_risk_recall": 0.8942897593204342,
+  "thresholds": {
+    "low_to_medium": 35,
+    "medium_to_high": 40
+  },
+  "dataset_info": {
+    "total_samples": 91320,
+    "cities": 10,
+    "date_range": "2000-01-01 to 2024-12-31"
+  }
+}
